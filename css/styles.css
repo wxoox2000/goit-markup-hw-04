@@ -164,6 +164,10 @@ header {
     url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -223,7 +227,12 @@ header {
 }
 
 .principles-item > div {
-  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 8px;
+
   background-color: var(--main-fill-color);
   border-radius: 4px;
 }
@@ -307,17 +316,11 @@ header {
 }
 
 .team-links-list {
-  padding-left: 16px;
-  padding-right: 16px;
   margin-top: 8px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
-}
-
-.link-item {
-  flex-basis: calc((100% - 24 * 3) / 4);
 }
 
 .link-icon {
@@ -329,9 +332,13 @@ header {
 }
 
 .member-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
   background-color: var(--main-blue-color);
-  padding: 12px;
   border-radius: 50px;
 }
 
@@ -350,18 +357,21 @@ header {
 }
 
 .customers-item {
-  flex-basis: calc((100% - 24 * 5) / 6);
+  flex-basis: calc((100% - 120px) / 6);
 }
 
 .customers-link {
-  display: block;
-  padding: 15px 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
 .customers-link:hover {
-  border: 1px solid #404bbf;
+  border-color:#404bbf;
 }
 
 .customers-icon {
@@ -425,10 +435,11 @@ header {
 }
 
 .soc-media-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  padding: 8px;
   border-radius: 50px;
 
   background-color: rgba(255, 255, 255, 0.1);
@@ -436,7 +447,7 @@ header {
 
 .soc-media-link:hover,
 .soc-media-link:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
 
 .soc-media-icon {
